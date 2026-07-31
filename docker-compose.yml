@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  postgres:
+    image: postgres:16
+    container_name: timemark-postgres
+    environment:
+      POSTGRES_DB: timemark
+      POSTGRES_USER: timemark
+      POSTGRES_PASSWORD: timemark
+    ports:
+      - "5432:5432"
+    volumes:
+      - timemark_pgdata:/var/lib/postgresql/data
+
+volumes:
+  timemark_pgdata:
