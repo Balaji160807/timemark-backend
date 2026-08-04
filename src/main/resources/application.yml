@@ -7,8 +7,13 @@ spring:
 
   datasource:
     url: jdbc:postgresql://localhost:5432/timemark
+<<<<<<< HEAD
     username: ${DB_USERNAME:timemark}
     password: ${DB_PASSWORD:timemark}
+=======
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:ramubalaji417}
+>>>>>>> 23a8499 (Initial commit)
     driver-class-name: org.postgresql.Driver
 
   jpa:
